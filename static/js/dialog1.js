@@ -3,7 +3,7 @@
 
   const currWindow = electron.remote.getCurrentWindow();
 
-  document.querySelector(".btn-system").addEventListener("click", function() {
+  document.querySelector('.btn-system').addEventListener('click', () => {
     currWindow.close();
   });
 })();

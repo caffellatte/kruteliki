@@ -36,6 +36,7 @@
 		"xo": "^0.25.3"
 	},
 	"xo": {
+    "space": true,
 		"envs": [
 			"node",
 			"browser"
