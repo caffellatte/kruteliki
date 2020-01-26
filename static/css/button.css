@@ -1,0 +1,78 @@
+.btn-system {
+    outline: none;
+    box-sizing: border-box;
+    height: 21px;
+    padding: 0 16px;
+    font-size: 13px;
+    border: 1px solid #d5d5d5;
+    font-weight: 400;
+    background-color: #fff;
+    letter-spacing: .4px;
+    border-radius: 4.5px;
+    border-top-color: #c6c6c6;
+    border-bottom-color: #aaa;
+    border-left-color: silver;
+    border-right-color:silver
+}
+
+.btn-system.btn-active:not([disabled]) {
+    letter-spacing: .8px;
+    color: #fff;
+    font-weight: 300;
+    padding: 0 17px 1px 16px;
+    border-top-color: #4096f8;
+    border-bottom-color: #0955ff;
+    border-left-color: #277afc;
+    border-right-color: #277afc;
+    background-image:linear-gradient(rgb(94, 168, 249), rgb(14, 117, 255))
+}
+
+.btn-system:active:not([disabled]), .btn-system.btn-active:active:not([disabled]) {
+    border-top-color: #1e72fe;
+    border-bottom-color: #0338d8;
+    border-left-color: #1052e9;
+    border-right-color: #1152e3;
+    background-image: linear-gradient(rgb(64, 140, 253), rgb(11, 93, 224));
+    letter-spacing: .8px;
+    color: #fff;
+    font-weight: 300;
+    padding:0 17px 1px 16px
+}
+
+.btn-system[disabled] {
+    border-color: #d4d4d4;
+    background-image: none;
+    background-color: #f8f8f8;
+    color: #a8a8a8;
+    box-shadow:0 1px 0 -.5px rgba(120, 120, 120, .2)
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and(-o-min-device-pixel-ratio: 2/1), only screen and(-webkit-min-device-pixel-ratio: 2), only screen and(min-device-pixel-ratio: 2) {
+    .btn-system, .btn-system:focus {
+        padding: 0 16px .5px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0 1px 0 -.5px rgba(120, 120, 120, .6);
+        font-family: blinkmacsystemfont, -apple-system, -apple-system;
+        background-position: center center;
+        background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogcmdiKDE4NSwgMTg1LCAxODUpOyBzdHJva2Utd2lkdGg6IDAuNXB4OyBzdHJva2UtbG9jYXRpb246IGluc2lkZTsiIHJ4PSI0cHgiLz48L3N2Zz4=), url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogcmdiKDE4NSwgMTg1LCAxODUpOyBzdHJva2Utd2lkdGg6IDAuNXB4OyBzdHJva2UtbG9jYXRpb246IGluc2lkZTsgc3Ryb2tlLWRhc2hhcnJheTogMTAwMHB4OyBzdHJva2UtZGFzaG9mZnNldDogMHB4OyIgcng9IjRweCIvPjwvc3ZnPg==), url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHg9IjAlIi8+PC9zdmc+);
+        background-size:100% 100%
+    }
+
+    .btn-system.btn-active:not([disabled]) {
+        border-radius: 3.5px;
+        font-weight:300
+    }
+
+    .btn-system.btn-active {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="100%" height="100%" style="fill: none; stroke: #0955ff; stroke-width: 0.5px; stroke-location: inside;" rx="4px"/></svg>'), linear-gradient(rgb(94, 168, 249), rgb(14, 117, 255)) !important
+    }
+
+    .btn-system.btn-active:active {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="100%" height="100%" style="fill: none; stroke: #0955ff; stroke-width: 0.5px; stroke-location: inside;" rx="4px"/></svg>'), linear-gradient(rgb(64, 140, 253), rgb(11, 93, 224)) !important
+    }
+
+    .btn-system[disabled], .btn-system.btn-active[disabled] {
+        background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogcmdiKDIxMiwgMjEyLCAyMTIpOyBzdHJva2Utd2lkdGg6IDAuNXB4OyBzdHJva2UtbG9jYXRpb246IGluc2lkZTsiIHJ4PSI0cHgiLz48L3N2Zz4=), url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogcmdiKDIxMiwgMjEyLCAyMTIpOyBzdHJva2Utd2lkdGg6IDAuNXB4OyBzdHJva2UtbG9jYXRpb246IGluc2lkZTsgc3Ryb2tlLWRhc2hhcnJheTogMTAwMHB4OyBzdHJva2UtZGFzaG9mZnNldDogMHB4OyIgcng9IjRweCIvPjwvc3ZnPg==) !important
+    }
+}

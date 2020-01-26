@@ -28,15 +28,23 @@ app.setAppUserModelId('com.company.AppName');
 // }
 
 // Prevent window from being garbage collected
+const electron = require('electron');
+
 let mainWindow;
 
 const createMainWindow = async () => {
 	const win = new BrowserWindow({
 		title: app.name,
 		show: false,
-		width: 600,
-		height: 400
-	});
+    width: 1280,
+    height: 720,
+    titleBarStyle: "hidden",
+    webPreferences: {
+      experimentalFeatures: true,
+      nodeIntegration: true
+    },
+    allowEval: true
+  })
 
 	win.on('ready-to-show', () => {
 		win.show();
@@ -86,5 +94,5 @@ app.on('activate', async () => {
 	mainWindow = await createMainWindow();
 
 	const favoriteAnimal = config.get('favoriteAnimal');
-	mainWindow.webContents.executeJavaScript(`document.querySelector('header p').textContent = 'Your favorite animal is ${favoriteAnimal}'`);
+	// mainWindow.webContents.executeJavaScript(`document.querySelector('header p').textContent = 'Your favorite animal is ${favoriteAnimal}'`);
 })();

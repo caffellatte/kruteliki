@@ -1,3 +1,4 @@
 node_modules
 yarn.lock
-/dist
+/dist/mac
+/dist/mac/builder-effective-config.yaml
