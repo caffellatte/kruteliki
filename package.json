@@ -1,7 +1,7 @@
 {
 	"name": "kruteliki",
 	"productName": "Kruteliki",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Social Media Tool Kit",
 	"license": "MIT",
 	"repository": "caffellatte/kruteliki",
@@ -36,7 +36,7 @@
 		"xo": "^0.25.3"
 	},
 	"xo": {
-    "space": true,
+		"space": true,
 		"envs": [
 			"node",
 			"browser"
